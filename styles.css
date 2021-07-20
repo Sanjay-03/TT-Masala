@@ -53,6 +53,15 @@ footer{
         padding: 2%;
         text-align: center;
     }
+    #sec
+    {
+        margin-top: 8%;
+    }
+    
+    #h:hover
+   {
+    color: skyblue;
+    }
 
 @media (max-width: 500px)
 {
@@ -65,5 +74,14 @@ footer{
 {
     padding: 6%;
 }
+#sec
+    {
+        margin-top: 230%;
+    }
+#hero
+{
+    margin-top: -1000px;
+}
+
     
 }
