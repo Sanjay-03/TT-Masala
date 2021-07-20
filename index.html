@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Tasty Tasty</title>
 <head>
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<h>>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tasty Tasty</title>
+    <link rel="shortcut icon" href="TT_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/8936e4ca13.js" crossorigin="anonymous"></script>
@@ -16,38 +16,35 @@
 <body>
     
     <section id="Home">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top" >
         <a class="navbar-brand" href="#"><img id="logo" src="TT_logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto" >
             <li class="nav-item">
-              <a class="nav-link active" href="#Home" >Home </a>
+              <a class="nav-link active" id="h" href="#Home" >Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#About">About</a>
+              <a class="nav-link active" id="h" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#Video">Video</a>
+              <a class="nav-link active" id="h" href="#Video">Video</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact</a>
+              <a class="nav-link active" id="h" href="#contact">Contact</a>
             </li>
             </ul>
         </div>
-      </nav>
-      
-      <br><br><br><br>
-      
+      </nav>      
       <div class="container">
-          <div class="row">
+          <div class="row" id="sec">
               <div class="col-lg-6">
                 <center><img id="front" src="blend2.jpg"></img></center>
               </div>
             
-        <div class="col-lg-6">
+        <div class="col-lg-6" id="hero">
             <h1 class="text-center">TT Sambar Powder</h1><br>
             <p>Mahesh value products private limited owns the brand TT. we believe in our vision of providing 'tasty' and 'healthy' food products.</p>
             <li>TT Madurai sambar powder Masalas its the one of our product</li>
@@ -56,9 +53,11 @@
         </div>
         </div>
         </section>
-        <section id="About">
+        
     <hr class="new" size="10">
+    <section id="About">
     <br>
+    <div class="container">
         <div class="row">
             <div class="col">
                 <div id="con">
@@ -71,9 +70,10 @@
                 TT product range consists of Asafoetida, Appalam, Pure Spices and Blend.</p>
               <p>  We ensure that only the best ingredients and high standards of manufacturing are used for making our products and we are proud of consistently delivering the authentic taste of tradition with utmost quality.
             </p>
+                </div>
             <div class="text-center">
             <b >Buy this product use the below link.</b><br><br>
-            <a class="btn btn-info btn-lg role="button" style="size: 30px;" href="https://www.amazon.in/TT-Sambar-Powder-Tamil-Style/dp/B08M38HL15"><i class="fab fa-amazon"></i>Purchase</a>
+            <a class="btn btn-info btn-lg role="button" style="size: 30px;" target="blank" href="https://www.amazon.in/TT-Sambar-Powder-Tamil-Style/dp/B08M38HL15"><i class="fab fa-amazon"></i>Purchase</a>
             </div>
         </div>
     </div>
@@ -102,13 +102,13 @@
             <form class="form-control">
               
               <label>Name</label>
-              <input  id="from" type="name" class="form-control mb-2">
+              <input  id="from" type="name" class="form-control mb-2" required >
             
             
               <label >Phone</label>
-              <input id="num" type="number" class="form-control mb-2">
+              <input id="num" type="number" class="form-control mb-2" required>
               <label>Country</label>
-              <select class="form-control mb-2" id="opt">
+              <select class="form-control mb-2" id="opt" required>
                 <option>INDIA</option>
                 <option>USA</option>
                 <option>Afghanistan</option>
@@ -118,8 +118,8 @@
             
             
               <label >Message</label>
-              <textarea class="form-control mb-3" rows="3" id="msg"></textarea>
-              <button onclick="myFunction()" class="btn btn-danger form-control">submit</button>
+              <textarea class="form-control mb-3" rows="3" id="msg" required></textarea>
+              <button onclick="myFunction()"  class="btn btn-danger form-control">submit</button>
               <p  class="text-primary"></p>
             
             </form>
